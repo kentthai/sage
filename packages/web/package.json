@@ -15,11 +15,17 @@
     "lint": "eslint src --ext .ts,.tsx"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
     "@sage/shared": "*",
     "@tanstack/react-query": "^5.13.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.563.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.0",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7",
     "zustand": "^4.4.7"
   },
   "devDependencies": {
