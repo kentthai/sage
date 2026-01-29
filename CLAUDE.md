@@ -2,6 +2,14 @@
 
 AI-powered lifelong learning agent and knowledge journal. Helps users capture, organize, and grow knowledge through conversational AI.
 
+## Project Status
+
+**Current Phase:** Phase 1 - MVP
+
+See [PROJECT_STATUS.md](./PROJECT_STATUS.md) for detailed progress tracking.
+
+> **Claude:** When completing tasks that advance project milestones, update the checkboxes in PROJECT_STATUS.md to reflect the current state. Mark tasks as complete (`[x]`) when fully implemented and working.
+
 ## Quick Commands
 
 ```bash
