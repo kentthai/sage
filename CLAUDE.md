@@ -83,7 +83,21 @@ sage/
 - **Job Queue**: BullMQ + Redis (swappable to SQS via `IJobQueue` interface)
 - **Database ORM**: Drizzle ORM - schema in `packages/api/src/db/schema/`
 - **Frontend State**: Zustand (UI state) + TanStack Query (server state)
-- **Styling**: Tailwind CSS
+- **Styling**: Tailwind CSS + shadcn/ui components
+
+## Frontend Components
+
+Using [shadcn/ui](https://ui.shadcn.com) - copy-paste components built on Radix UI.
+
+```bash
+# Add new components
+npx shadcn@latest add dialog
+npx shadcn@latest add dropdown-menu
+npx shadcn@latest add tabs
+```
+
+- Components location: `packages/web/src/components/ui/`
+- Import alias: `@/components/ui/button`
 
 ## Database Setup
 
