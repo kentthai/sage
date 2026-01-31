@@ -1,6 +1,6 @@
 # Sage - Project Status
 
-> Last updated: 2026-01-30
+> Last updated: 2026-01-31
 
 ## Current Phase: Phase 1 - MVP
 
@@ -29,8 +29,8 @@
 - [x] Express server with health endpoint
 - [x] InversifyJS dependency injection container
 - [x] Interface definitions for all providers
-- [ ] Database connection pool
-- [ ] Error handling middleware
+- [x] Database connection pool
+- [x] Error handling middleware
 - [ ] Request validation (zod)
 
 ### Authentication
