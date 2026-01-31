@@ -9,7 +9,8 @@
     "test:ui": "playwright test --ui",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
-    "report": "playwright show-report"
+    "report": "playwright show-report",
+    "screenshot": "npx tsx screenshot.ts"
   },
   "devDependencies": {
     "@playwright/test": "^1.40.0"

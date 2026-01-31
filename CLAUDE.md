@@ -81,7 +81,7 @@ sage/
 
 ## Git Workflow
 
-> **Claude: ALWAYS check your current branch before committing. If on main, create a feature branch first.**
+> **Claude: ALWAYS create a new feature branch at the START of each task that involves code changes.** Check your current branch before any work begins. Never commit unrelated changes to an existing feature branch.
 
 - **Branch naming**:
   - `feature/description` for new features
@@ -113,6 +113,21 @@ npm run test:watch -w @sage/web
 
 # E2E with browser UI (debugging)
 cd e2e && npm run test:ui
+
+# Take screenshot for visual verification
+cd e2e && npx tsx screenshot.ts [url] [output-path]
+```
+
+### Visual Verification
+
+> **Claude:** Use the screenshot script to visually verify UI changes. Run the script, then read the image file to inspect the result.
+
+```bash
+# Capture default page (localhost:5173)
+cd e2e && npx tsx screenshot.ts
+
+# Capture specific page
+cd e2e && npx tsx screenshot.ts http://localhost:5173/knowledge /tmp/screenshot.png
 ```
 
 ## Frontend Components
