@@ -81,7 +81,8 @@ sage/
 
 ## Git Workflow
 
-- **Never commit directly to main** - always create a feature branch
+> **Claude: ALWAYS check your current branch before committing. If on main, create a feature branch first.**
+
 - **Branch naming**:
   - `feature/description` for new features
   - `fix/description` for bug fixes
