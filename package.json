@@ -4,7 +4,8 @@
   "private": true,
   "description": "AI-powered lifelong learning agent and knowledge journal",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "e2e"
   ],
   "scripts": {
     "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\"",

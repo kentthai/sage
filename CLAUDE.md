@@ -67,7 +67,8 @@ sage/
 │   │   └── tests/
 │   └── shared/               # Shared types and utilities
 ├── docker/                   # Docker configs (infrastructure only)
-└── e2e/                      # End-to-end tests
+└── e2e/                      # End-to-end tests (Playwright, separate workspace)
+    └── tests/                # *.spec.ts test files
 ```
 
 ## Key Conventions
@@ -92,6 +93,26 @@ sage/
 - **Database ORM**: Drizzle ORM - schema in `packages/api/src/db/schema/`
 - **Frontend State**: Zustand (UI state) + TanStack Query (server state)
 - **Styling**: Tailwind CSS + shadcn/ui components
+- **Testing**: Vitest (unit/integration) + Playwright (E2E)
+
+## Testing
+
+- **Unit/Integration**: Vitest with `*.test.ts` files in `tests/` folders
+- **E2E**: Playwright in `e2e/` workspace (separate npm package)
+- **API testing**: supertest for HTTP endpoint tests
+- **React testing**: @testing-library/react + jsdom
+
+```bash
+# Run all tests
+npm test
+
+# Watch mode (unit tests)
+npm run test:watch -w @sage/api
+npm run test:watch -w @sage/web
+
+# E2E with browser UI (debugging)
+cd e2e && npm run test:ui
+```
 
 ## Frontend Components
 

@@ -1,6 +1,6 @@
 # Sage - Project Status
 
-> Last updated: 2026-01-28
+> Last updated: 2026-01-30
 
 ## Current Phase: Phase 1 - MVP
 
@@ -75,9 +75,9 @@
 - [ ] Tag filtering
 
 ### Testing
-- [ ] Unit test setup (Vitest)
-- [ ] Integration test setup
-- [ ] E2E test setup (Playwright)
+- [x] Unit test setup (Vitest)
+- [x] Integration test setup
+- [x] E2E test setup (Playwright)
 - [ ] Test coverage reporting
 
 ---
